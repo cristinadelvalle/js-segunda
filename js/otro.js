@@ -32,10 +32,10 @@ function Usuario(nombre, apellido, edad, profesion) {
     }
   
     function RegistroPaciente() {
-      const registrarNuevoUsuario = []; // Array para almacenar los pacientes
+      const registrarNuevoUsuario = [];
   
       const unUsuario = new Usuario("Juan", "Ramallo", 22, "Estudiante universitario");
-      registrarNuevoUsuario.push(unUsuario); // Agregar el primer paciente al array
+      registrarNuevoUsuario.push(unUsuario); 
   
       let nombre = prompt("Ingrese su nombre ");
       let apellido = prompt("Ingrese su apellido ");
@@ -43,9 +43,9 @@ function Usuario(nombre, apellido, edad, profesion) {
       let profesion = prompt("Ingresse su profesion")
   
       const otroUsuario = new Usuario(nombre, apellido, edad, profesion);
-      registrarNuevoUsuario.push(otroUsuario); // Agregar el segundo paciente al array
+      registrarNuevoUsuario.push(otroUsuario);
   
-      console.table(registrarNuevoUsuario); // Mostrar el array de pacientes en formato de tabla
+      console.table(registrarNuevoUsuario); 
   
     }
 
