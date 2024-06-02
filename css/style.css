@@ -5,10 +5,22 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container-md{
-    background-color: pink;
+    background-color: rgb(242, 212, 234);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
 }
-.h1{
-    text-align: center;
+.lista{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    border: 2px solid pink;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

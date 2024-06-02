@@ -1,0 +1,12 @@
+ [
+    { "nombre": "Camila","apellido": "Balcarce", "edad": 18, "profesion": "Estudiante" },
+    { "nombre": "César","apellido": "Del Rio", "edad": 34, "profesion": "Contador" },
+    { "nombre": "Roberto","apellido": "Saavedra","edad": 60, "profesion": "Abogado" },
+    { "nombre": "Juan", "apellido": "Ramallo", "edad": 22, "profesion": "Estudiante universitario" },
+    { "nombre": "Manuel","apellido": "Carlos", "edad": 45, "profesion": "Desempleado" },
+    { "nombre": "Juan", "apellido": "Mamaní", "edad": 33, "profesion": "Profesor" },
+    { "nombre": "Bautista", "apellido": "klisma", "edad": 56, "profesion": "Chef" },
+    { "nombre": "Armando"," apellido":"Romero", "edad": 56, "profesion": "Ingeniero" },
+    { "nombre": "Rubén", "apellido": "Sing", "edad": 27, "profesion": "Contador" },
+    { "nombre": "Norma", "apellido": "Peralta", "edad": 70, "profesion": "Jubilada" }
+  ]
