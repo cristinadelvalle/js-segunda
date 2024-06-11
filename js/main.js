@@ -27,22 +27,22 @@ function RegistroPaciente() {
   const unUsuario = new Usuario("Juan", "Ramallo", 22, "Estudiante universitario");
   registrarNuevoUsuario.push(unUsuario);
 
-  let nombre = prompt("Ingrese su nombre ").toUpperCase();
-  let apellido = prompt("Ingrese su apellido ").toUpperCase();
-  let edad = parseInt(prompt("Ingrese edad"));
-  let profesion = prompt("Ingrese su profesion").toUpperCase()
+  // let nombre = prompt("Ingrese su nombre ").toUpperCase();
+  // let apellido = prompt("Ingrese su apellido ").toUpperCase();
+  // let edad = parseInt(prompt("Ingrese edad"));
+  // let profesion = prompt("Ingrese su profesion").toUpperCase()
 
   const otroUsuario = new Usuario(nombre, apellido, edad, profesion);
   registrarNuevoUsuario.push(otroUsuario);
 
   console.table(registrarNuevoUsuario);
 
-
   let filtrarUnUsuario = prompt("Desea filtrar un ususario?")
   if (filtrarUnUsuario === "si"){
     const filtrarUsuario = usuarios.filter(usuario => usuario.nombre === "Juan")
       .filter(usuario => usuario.apellido === "Ramallo")
       .filter(usuario => usuario.profesion === "Estudiante universitario")
+
     console.table(filtrarUsuario);
   }else{
     return
@@ -53,21 +53,37 @@ function RegistroPaciente() {
 RegistroPaciente()
 
 
-
-
-
-
 function GuardarUusarios() {
   const usuariosRegistrados = document.querySelector(".lista-usuarios")
   usuariosRegistrados.forEach(usuario => usuario.nombre == usuario)
-  const lista = document.createElement("ul")
-  lista.innerHTML=`<ul>${usuarios.nombre}
+  const lista = document.createElement("div")
+  lista.innerHTML=`<ul>${usuario.nombre}
                   <li class="usuario">${usuarios.apellido} </li>
                   <li class="usuario">${usuarios.edad} </li>
                   <li class="usuario">${usuarios.profesion} </li>
   
                    </ul>` 
-// localStorage.setItem("usuarios",  JSON.stringify(usuarios) )
+`
+                   <div id="lista-usuarios" class="lista">
+                   LISTA USUARIOS
+                   <form action="">
+       
+                       <input type="text" class="nombre" placeholder=" ">${usuarios.nombre}
+                       <input type="text" class="apellido" placeholder="Apellido">
+                       <input type="number" class="edad" placeholder="Edad">
+                       <input type="text" class="profesion" placeholder="Profesión">
+                       <button id="btn-enviar">Registrarse</button>
+       
+       
+                   </form>
+               </div>`
+
+
+localStorage.setItem("usuarios",  JSON.stringify(usuarios) )
+const usuariosEnLS = JSON.parse(localStorage.getItem("usuasrios"))
+document.dody.appenChild(usuariosEnLS)
+
+
 }
 
 
